@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Catalog</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/catalog.css') }}">
+  </head>
+  <body>
+    <h1 class="header">{{category.name}}</h1>
+    <h2 class="item-header">Item: {{item.name}}</h2>
+    <h4 class="item-description">Description: {{item.description}}</h4>
+    <h4 class="item-price">Price: {{item.price}}</h4>
+    <div class="item-div">
+      <a class="item-link" href="/{{category.name}}/items/{{item.name}}/delete">Delete Item</a>
+      <a class="item-link" href="/{{category.name}}/items/{{item.name}}/edit">Edit Item</a>
+      <a class="item-link" href="/{{category.name}}">Go Back</a>
+      {% if username == False %}
+      <a class="item-link login-link" href="/login">Login</a>
+      {% else %}
+      <a class="item-link login-link" href="/gdisconnect">Logout</a>
+      {% endif %}
+    </div>
+  </body>
+</html>

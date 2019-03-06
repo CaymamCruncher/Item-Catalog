@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Catalog</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/catalog.css') }}">
+  </head>
+  <body>
+    <h1 class="header">{{category.name}}</h1>
+    <h2 class="input-header">Add Item<h2>
+    <form method="POST">
+      <input class="input" name="itemName" placeholder="Item Name" required/>
+      <input class="input" name="itemDescription" placeholder="Item Description" required/>
+      <input class="input" name="itemPrice" placeholder="Item price" required/>
+      <div class="input-div">
+        <button class="input-button" type="submit">Add Item</button>
+        <a class="input-link" href="/{{category.name}}">Go Back</a>
+      </div>
+    </form>
+  </body>
+</html>

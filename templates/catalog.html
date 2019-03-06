@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Catalog</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/catalog.css') }}">
+  </head>
+  <body>
+    <h1 class="header">Sports Catalog</h1>
+    <ul class="list">
+      {% for category in categories %}
+        <li class="list-item">
+          <h3><a href="/{{category.name}}" class="list-link">{{category.name}}</a></h3>
+        </li>
+      {% endfor %}
+      {% if username == False %}
+        <li class="list-item login-link">
+          <h3><a href="/login" class="list-link">Login</a></h3>
+        </li>
+      {% else %}
+        <li class="list-item login-link">
+          <h3><a href="/gdisconnect" class="list-link">Logout</a></h3>
+        </li>
+      {% endif %}
+    </ul>
+  </body>
+</html>

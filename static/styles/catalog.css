@@ -1,0 +1,166 @@
+/* default styles */
+body {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, input, button, p, a {
+  font-family: sans-serif;
+}
+
+/* styles for header */
+
+.header {
+  text-align: center;
+  color: #bb1455;
+  background: #3e403e;
+  padding: 1%;
+  font-size: 3.3em;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* styles for lists */
+
+.list {
+  border: 5px solid #3e403e;
+  background-color: #3e403e;
+  display: inline-block;
+  margin: 0;
+  padding: 0 2%;
+  height: 100%;
+}
+
+.list-item {
+  padding: none;
+  list-style: none;
+  font-size: 2em;
+  margin: 25% 0;
+}
+
+.list-link {
+  text-decoration: none;
+  color: #bb1455;
+}
+
+/* styles for form */
+
+.input-header {
+  color: #3e403e;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.input {
+  display: block;
+  margin: 2% auto;
+  font-size: .7em;
+  border: #bb1455 2px solid;
+  padding: .5%;
+  color: #bb1455;
+  background-color: #3e403e;
+  font-weight: bold;
+}
+
+.input-button {
+  margin: 2% auto;
+  font-size: 1em;
+  border: #bb1455 2px solid;
+  background-color: #3e403e;
+  color: #bb1455;
+  padding: .5%;
+  cursor: pointer;
+}
+
+.input-link {
+  text-decoration: none;
+  border: #bb1455 2px solid;
+  background-color: #3e403e;
+  padding: .5%;
+  font-weight: normal;
+  color: #bb1455;
+}
+
+.input-div {
+  text-align: center;
+  display: block;
+}
+
+/* item styles */
+
+.item-header {
+  text-align: center;
+  font-size: 3em;
+  margin: 1%;
+  color: #bb1455;
+}
+
+.item-description {
+  text-align: center;
+  font-size: 1.7em;
+  margin: 1%;
+}
+
+.item-price {
+  text-align: center;
+  font-size: 1.7em;
+  margin: 1%;
+}
+
+.item-div {
+  text-align: center;
+  display: block;
+  margin: 2% auto;
+}
+
+.item-button {
+  margin: 2% auto;
+  font-size: 1.3em;
+  border: #bb1455 2px solid;
+  background-color: #3e403e;
+  color: #bb1455;
+  padding: .5%;
+  cursor: pointer;
+}
+
+.item-link {
+  font-size: 1.3em;
+  border: #bb1455 2px solid;
+  background-color: #3e403e;
+  padding: .5%;
+  text-decoration: none;
+  color: #bb1455;
+}
+
+/* styles for login  */
+
+.login {
+  text-align: center;
+  margin: 1%;
+}
+
+.login-header {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 3%;
+  color: #bb1455;
+}
+
+.home {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2em;
+  margin: 3% auto;
+  color: #bb1455;
+}
+
+#result {
+  text-align: center;
+  margin: 1%, auto;
+  display: block;
+  color: #bb1455;
+  padding: 1%;
+}
